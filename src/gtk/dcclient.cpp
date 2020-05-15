@@ -428,12 +428,12 @@ void wxWindowDC::SetUpDC()
     if (!hatch_bitmap)
     {
         hatch_bitmap    = hatches;
-        hatch_bitmap[0] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, bdiag_bits, bdiag_width, bdiag_height );
-        hatch_bitmap[1] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, cdiag_bits, cdiag_width, cdiag_height );
-        hatch_bitmap[2] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, fdiag_bits, fdiag_width, fdiag_height );
-        hatch_bitmap[3] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, cross_bits, cross_width, cross_height );
-        hatch_bitmap[4] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, horiz_bits, horiz_width, horiz_height );
-        hatch_bitmap[5] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, verti_bits, verti_width, verti_height );
+        hatch_bitmap[0] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, (const gchar *)bdiag_bits, bdiag_width, bdiag_height );
+        hatch_bitmap[1] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, (const gchar *)cdiag_bits, cdiag_width, cdiag_height );
+        hatch_bitmap[2] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, (const gchar *)fdiag_bits, fdiag_width, fdiag_height );
+        hatch_bitmap[3] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, (const gchar *)cross_bits, cross_width, cross_height );
+        hatch_bitmap[4] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, (const gchar *)horiz_bits, horiz_width, horiz_height );
+        hatch_bitmap[5] = gdk_bitmap_create_from_data( (GdkWindow *) NULL, (const gchar *)verti_bits, verti_width, verti_height );
     }
 }
 
